@@ -33,7 +33,9 @@ class Scratch3OperatorsBlocks {
             operator_contains: this.contains,
             operator_mod: this.mod,
             operator_round: this.round,
-            operator_mathop: this.mathop
+            operator_mathop: this.mathop,
+            operator_square: this.square,
+            operator_square_root: this.squareRoot
         };
     }
 
@@ -148,6 +150,14 @@ class Scratch3OperatorsBlocks {
         case '10 ^': return Math.pow(10, n);
         }
         return 0;
+    }
+
+    square (args) {
+        return Math.pow(Cast.toNumber(args.NUM), 2);
+    }
+
+    squareRoot (args) {
+        return Math.sqrt(Cast.toNumber(args.NUM));
     }
 }
 

@@ -1394,6 +1394,26 @@ const specMap = {
             }
         ]
     },
+    'square': {
+        opcode: 'operator_square',
+        argMap: [
+            {
+                type: 'input',
+                inputOp: 'math_number',
+                inputName: 'NUM'
+            }
+        ]
+    },
+    'square_root': {
+        opcode: 'operator_square_root',
+        argMap: [
+            {
+                type: 'input',
+                inputOp: 'math_number',
+                inputName: 'NUM'
+            }
+        ]
+    },
     'computeFunction:of:': {
         opcode: 'operator_mathop',
         argMap: [
